@@ -35,19 +35,13 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun RelativeLayouts() {
-    Column(
-        modifier = Modifier.fillMaxSize()
-    ) {
-        Row(
-            modifier = Modifier.padding(10.dp)
-        ) {
+    Column( modifier = Modifier.fillMaxSize() ) {
+        Row( modifier = Modifier.padding(10.dp) ) {
             Text(text = "item1 ", modifier = Modifier.background(color = Color(0xFFff0000)))
             Text(text = "item2 ", modifier = Modifier.background(color = Color(0xFF00ff00)))
             Text(text = "item3 ", modifier = Modifier.background(color = Color(0xFF0000ff)))
         }
-        Column(
-            modifier = Modifier.padding(10.dp)
-        ) {
+        Column( modifier = Modifier.padding(10.dp) ) {
             Text(text = "item1 ", modifier = Modifier.background(color = Color(0xFFff0000)))
             Text(text = "item2 ", modifier = Modifier.background(color = Color(0xFF00ff00)))
             Text(text = "item3 ", modifier = Modifier.background(color = Color(0xFF0000ff)))
